@@ -109,6 +109,50 @@ p {
   margin: auto 0;
 }
 
+@media screen and (min-width: 1440px) {
+  main {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 8rem 22rem;
+  }
+  .hero-image {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+  }
+  .hero {
+    grid-column-start: 6;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    padding: 1.5rem;
+  }
+  h1 {
+    font-size: 1.25rem;
+    letter-spacing: 0.25px;
+  }
+  p {
+    letter-spacing: 0.12px;
+    font-size: 13px;
+  }
+  .about-author {
+    padding-top: 1rem;
+  }
+  .socials {
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+  }
+  .overlay {
+    position: absolute;
+    top: 268px;
+    right: 268px;
+    border-radius: 10px;
+    padding: 1.125rem 2rem;
+  }
+  .mobile {
+    display: none !important;
+  }
+}
 .visible {
   display: grid;
 }
